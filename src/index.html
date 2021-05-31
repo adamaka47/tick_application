@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang=ru>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Поиск билетов</title>
+  </head>
+  <body> 
+    <nav class="header-nav purple darken-4">
+        <div class="nav-wrapper">
+          <div class="container d-flex align-items-center">
+          <div class="logo">
+            <a class="brand-logo" href="#">Авиабилеты <span><i class="large material-icons">flight_takeoff</i></span></a>
+          </div>
+          <ul id="nav-mobile" class="right hide-on-med-and-down ml-auto">
+            <li>
+              <div class="input-field">
+                <select id="currency">
+                    <option value="USD">$ US Dollar</option>
+                    <option value="EUR">€ EU Euro</option>
+                </select>
+            </div>
+          </li>
+          </ul>
+          </div>
+        </div>
+    </nav>
+
+    <div class="form-section">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col s12 m6 mx-auto">
+            <div class="card">
+              <form name="card-form">
+                <div class="card-content">
+                  <span class="card-title">
+                    Поиск билета
+                  </span>
+                  <div class="input-field">
+                    <input type="text" id="autocomplete-from" class="autocomplete autocomplete--from">
+                    <label for="autocomplete-from">Откуда едете</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" id="autocomplete-to" class="autocomplete autocomplete---to">
+                    <label for="autocomplete-to">Куда едете</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" class="datepicker" id="datepick-from">
+                    <label for="datepick-from">Дата поездки</label>
+                  </div>
+                  <div class="input-field">
+                    <input type="text" class="datepicker" id="datepick-to">
+                    <label for="datepick-to">Обратная дата</label>
+                  </div>
+                </div>
+                <div class="card-action d-flex">
+                  <button class="btn waves-effect waves-light purple darken-4" type="submit" name="action">Поиск
+                    <i class="material-icons right">search</i>
+                  </button>
+                  <button class="btn waves-effect waves-light red darken-2 ml-auto" type="submit" name="action">Сброс
+                    <i class="material-icons right">cancel</i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="tickets-sections">
+      <div class="container">
+        <div class="row">
+          
+        </div>
+    </div>
+
+  </body>
+</html>
