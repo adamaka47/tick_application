@@ -12,7 +12,7 @@ class TicketUI {
 
 		if (!tickets.length) {
 
-			showEmptyMsg()
+			this.showEmptyMsg()
 			return
 		}		
 
